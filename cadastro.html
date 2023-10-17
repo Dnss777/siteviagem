@@ -10,26 +10,46 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../exe.MOD2/ag.css">
   <style>
-    h2 {
-      text-align: center;
-      padding-block-end: 70px;
-      padding-top: 40px;
-      background-color: rgb(218, 213, 221, 0.897);
-    }
 
-    .card {
-      padding-block-end: 20px;
-      padding-top: 20px;
-      background-color: rgb(218, 213, 221, 0.897);
+main {
+    background-color:rgba(218, 213, 221, 0.897) ;
+}
 
-    }
+h1{
+    margin-top: 10px;
+   
+}
+h5{
+    margin-top: 20px;
 
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
+}
+h4{
+    margin-top: 50px;
+}
+.text{
+    text-align: center;
+    margin-bottom: 2%;
+    
+}
 
-    /*começo footer */ 
+.form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 5%; 
+        }
+        
+        .form-section {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .middle-divider {
+            height: 100%;
+            margin: 1 10px;
+        }
+
+
 
     footer {
       background-color: rgb(63, 63, 63);
@@ -100,10 +120,15 @@
       }
     }
     /*fim footer */ 
-  </style>
+
+    </style>
+</head>
+    
 
 <body>
-
+    <!--Começo Nav bar---->
+    
+      
   <nav class="navbar">
     <div class="container-fluid">
       <h1> Bora Agora?</h1>
@@ -134,7 +159,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="entrar.html">Entrar</a></li>
               <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
-            </ul>
+                                      </ul>
           </li>
     </ul>
         </ul>
@@ -145,65 +170,77 @@
       </div>
     </div>
   </nav>
-  <!--final---->
+    
+    
+    <!--fim Nav bar---->
 
-  <!--card---->
-  <h2> Destinos</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="lasvegas.jpeg" class="card-img-top" alt="Lasvegas">
-        <div class="card-body">
-          <h5 class="card-title">Las Vegas - Estados Unidos</h5>
-          <p class="card-text">Um oásis no deserto que cativa os visitantes com sua arquitetura extravagante, hotéis
-            temáticos deslumbrantes e oportunidades de entretenimento sem fim, tornando-a uma cidade que nunca dorme e
-            que promete momentos emocionantes e luxuosos.</p>
-          <button type="button" class="btn btn-primary">Reservar Pacote</button>
+    <body>
+        <main>
+        <div class="text">
+                    <h1>Cadastre-se</h1>
+                    <h4>Que bom que você escolheu viajar conosco!</h4>
+        <h5>Após seu cadastro, você deverá escolher um dos nossos destinos incríveis!</h5>
         </div>
+    <!-- Formulário -->
+    <div class="form-container">
+      <div class="form-section mb-auto">
+          
+          
+          <!-- Formulário de cadastro aqui -->
+          <div class="row g-3">
+            <div class="col mb-3">
+              <label for="inputEmail4" class="form-label fw-bold">Nome</label>
+              <input type="text" class="form-control" placeholder="" aria-label="Nome">
+            </div>
+            <div class="col">
+              <label for="inputEmail4" class="form-label fw-bold">Sobrenome</label>
+              <input type="text" class="form-control" placeholder="" aria-label="Sobrenome">
+            </div>
+          </div>
+          <form class="row g-3">
+            <div class="col-md-6 mb-2">
+              <label for="inputEmail4" class="form-label fw-bold">Email</label>
+              <input type="text" class="form-control" placeholder="" aria-label="E-mail">
+            </div>
+            
+            <form class="row g-3">
+              <div class="col-md-6 mb-2">
+                <label for="inputEmail4" class="form-label fw-bold">Telefone</label>
+                <input type="text" class="form-control" placeholder="" aria-label="E-mail">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label for="inputPassword4" class="form-label fw-bold">Confirme sua senha</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+                       
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label fw-bold">Crie sua senha</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+                                  
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Permanecer conectado
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="santorini.jpeg" class="card-img-top" alt="Santorini">
-        <div class="card-body">
-          <h5 class="card-title">Santorini - Grécia</h5>
-          <p class="card-text">A ilha de Santorini, localizada na Grécia, é considerada um dos destinos mais românticos
-            do país. Com as típicas casinhas brancas com telhado azul – as cores da bandeira grega – o local oferece
-            paisagens deslumbrantes e, segundo os gregos, o pôr do sol mais bonito do mundo.</p>
-
-          <button type="button" class="btn btn-primary">Reservar Pacote</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="maragogi.jpeg" class="card-img-top" alt="Maragogi">
-        <div class="card-body">
-          <h5 class="card-title">Maragogi - Alagoas</h5>
-          <p class="card-text">Um verdadeiro paraíso tropical com suas praias de águas cristalinas e piscinas naturais
-            exuberantes, proporcionando uma experiência única de contato com a natureza em um cenário paradisíaco.</p>
-          <button type="button" class="btn btn-primary">Reservar Pacote</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="lençois.jpeg" class="card-img-top" alt="Lençóis">
-        <div class="card-body">
-          <h5 class="card-title">Lençóis Maranhenses - Maranhão</h5>
-          <p class="card-text">É mergulhar em um mundo de beleza natural incomparável, onde a imensidão das dunas e a
-            riqueza das lagoas proporcionam uma experiência surreal. Essa maravilha da natureza é a oportunidade de vivenciar um destino mágico e inexplorado."</p>
-          <button type="button" class="btn btn-primary">Reservar Pacote</button>
-        </div>
-      </div>
-    </div>
   </div>
-  <!--final card---->
+    
+        </main>
 
 
-  <!---Rodapé-->
 
-  <footer>
+
+<!---Rodapé-->
+
+<footer>
     <div class="footer-info">
       <div class="contact-info">
 
